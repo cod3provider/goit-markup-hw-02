@@ -1,5 +1,6 @@
 :root {
     --main-color: #212121;
+    --
 }
 
 * {
@@ -33,7 +34,10 @@ body {
     text-decoration: none;
 }
 
-.page-header .link:hover {
+.page-header .link:hover,
+.page-header .link:focus,
+.footer-address .link:hover,
+.footer-address .link:focus {
     color: #2196F3;
 }
 
@@ -42,20 +46,86 @@ body {
 .page-header .header-link {
     font-size: 14px;
     line-height: 1.14;
-    
 }
 
 .site-nav .nav-link {
     color: #212121;
 }
 
+/* .site-nav .nav-link .current-link {
+    color: #2196F3;
+} */
+
 .page-header .header-link {
     color: #757575;
 }
 
+.hero {
+    height: 600px;
+    background-color: #2F303A;
+}
 
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
 
+.button {
+    height: 50px;
+    width: 200px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
 
+.feature-title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: #212121;
+}
+
+.feature-text {
+    font-size: 14px;
+    line-height: 1.71;
+    color: #757575;
+}
+
+.features-main-title,
+.job-title,
+.team-main-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: #212121;
+}
+
+.team-title,
+.team-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: #212121;
+}
+
+.team .team-text {
+    font-weight: normal;
+    color: #757575;
+}
 
 .footer-logo {
     color: #fff;
@@ -63,4 +133,16 @@ body {
 
 .footer-logo span {
     color: #2196F3;
+}
+
+.footer-address .footer-link {
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-address-link {
+    font-size: 14px;
+    line-height: 1.71;
+    color: #FFFFFF;
 }
