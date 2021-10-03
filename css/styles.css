@@ -7,7 +7,60 @@
     padding: 0;
 }
 
+body {
+    font-family: 'Roboto';
+}
+
+.header-logo, .footer-logo {
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    color: #2196F3;
+    text-decoration: none;
+
+}
+
+.header-logo {
+    color: #000;
+}
+
+.header-logo span {
+    color: #2196F3;
+}
+
 .link {
     text-decoration: none;
 }
 
+.page-header .link:hover {
+    color: #2196F3;
+}
+
+
+.site-nav .nav-link,
+.page-header .header-link {
+    font-size: 14px;
+    line-height: 1.14;
+    
+}
+
+.site-nav .nav-link {
+    color: #212121;
+}
+
+.page-header .header-link {
+    color: #757575;
+}
+
+
+
+
+
+.footer-logo {
+    color: #fff;
+}
+
+.footer-logo span {
+    color: #2196F3;
+}
