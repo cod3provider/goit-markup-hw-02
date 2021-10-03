@@ -1,15 +1,23 @@
 :root {
     --main-color: #212121;
-    --
-}
-
-* {
-    margin: 0;
-    padding: 0;
+    --secondary-color: #2196F3;
+    --text-color: #757575;
+    --white-color: #FFFFFF;
+    --black-color: #212121;
+    --header-footer-color: #2F303A;
+    --logo-color: #000000;
 }
 
 body {
-    font-family: 'Roboto';
+    font-family: 'Roboto',
+    'Helvetica Neue',
+    'Verdana',
+    'Tahoma',
+    sans-serif;
+}
+
+ul {
+    list-style: none;
 }
 
 .header-logo, .footer-logo {
@@ -17,17 +25,16 @@ body {
     font-weight: bold;
     font-size: 26px;
     line-height: 1.19;
-    color: #2196F3;
+    color: var(--secondary-color);
     text-decoration: none;
-
 }
 
 .header-logo {
-    color: #000;
+    color: var(--logo-color);
 }
 
 .header-logo span {
-    color: #2196F3;
+    color: var(--secondary-color);
 }
 
 .link {
@@ -38,7 +45,7 @@ body {
 .page-header .link:focus,
 .footer-address .link:hover,
 .footer-address .link:focus {
-    color: #2196F3;
+    color: var(--secondary-color);
 }
 
 
@@ -49,20 +56,20 @@ body {
 }
 
 .site-nav .nav-link {
-    color: #212121;
+    color: var(--black-color);
 }
 
-/* .site-nav .nav-link .current-link {
-    color: #2196F3;
-} */
+.site-nav .current-link {
+    color: var(--secondary-color);
+}
 
 .page-header .header-link {
-    color: #757575;
+    color: var(--text-color);
 }
 
 .hero {
-    height: 600px;
-    background-color: #2F303A;
+
+    background-color: var(--header-footer-color);
 }
 
 .hero-title {
@@ -71,7 +78,7 @@ body {
     line-height: 1.36;
     text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 
 .button {
@@ -83,8 +90,8 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
-    color: #FFFFFF;
-    background-color: #2196F3;
+    color: var(--white-color);
+    background-color: var(--secondary-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
@@ -94,13 +101,13 @@ body {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    color: #212121;
+    color: var(--black-color);
 }
 
 .feature-text {
     font-size: 14px;
     line-height: 1.71;
-    color: #757575;
+    color: var(--text-color);
 }
 
 .features-main-title,
@@ -110,7 +117,7 @@ body {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    color: #212121;
+    color: var(--black-color);
 }
 
 .team-title,
@@ -119,20 +126,24 @@ body {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    color: #212121;
+    color: var(--black-color);
 }
 
 .team .team-text {
     font-weight: normal;
-    color: #757575;
+    color: var(--text-color);
+}
+
+.footer {
+    background-color: var(--header-footer-color);
 }
 
 .footer-logo {
-    color: #fff;
+    color: var(--white-color);
 }
 
 .footer-logo span {
-    color: #2196F3;
+    color: var(--secondary-color);
 }
 
 .footer-address .footer-link {
@@ -144,5 +155,38 @@ body {
 .footer-address-link {
     font-size: 14px;
     line-height: 1.71;
-    color: #FFFFFF;
+    color: var(--white-color);
+}
+
+
+/* Разметка portfolio */
+
+.portfolio-examples .potfolio-button {
+    padding: 6px 22px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    color: var(--black-color)
+    border: none;
+}
+
+.portfolio-examples .potfolio-button:hover,
+.portfolio-examples .potfolio-button:focus,
+.portfolio-examples .potfolio-button:active {
+    color: var(--white-color);
+    background: var(--secondary-color);
+}
+
+.portfolio-examples .example-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    color: var(--black-color);
+}
+
+.portfolio-examples .example-text {
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--text-color);
 }
