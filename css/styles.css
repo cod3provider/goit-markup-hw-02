@@ -49,21 +49,21 @@ ul {
 }
 
 
-.site-nav .nav-link,
-.page-header .header-link {
+.nav-link,
+.header-link {
     font-size: 14px;
     line-height: 1.14;
 }
 
-.site-nav .nav-link {
+.nav-link {
     color: var(--black-color);
 }
 
-.site-nav .current-link {
+.current-link {
     color: var(--secondary-color);
 }
 
-.page-header .header-link {
+.header-link {
     color: var(--text-color);
 }
 
