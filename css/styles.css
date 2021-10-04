@@ -10,19 +10,17 @@
 
 body {
     font-family: 'Roboto',
-        'Helvetica Neue',
-        'Verdana',
-        'Tahoma',
-        sans-serif;
+    'Helvetica Neue',
+    'Verdana',
+    'Tahoma',
+    sans-serif;
 }
 
 ul {
     list-style: none;
-    text-decoration: none;
 }
 
-.header-logo,
-.footer-logo {
+.header-logo, .footer-logo {
     font-family: Raleway;
     font-weight: bold;
     font-size: 26px;
