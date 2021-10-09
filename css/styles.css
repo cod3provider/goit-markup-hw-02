@@ -142,7 +142,6 @@ body {
 }
 
 .feature-text {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -153,7 +152,6 @@ body {
 
 .team-title,
 .team-text {
-    font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -161,8 +159,11 @@ body {
     color: var(--title-color);
 }
 
+.team-title {
+    font-weight: 500;
+}
+
 .team .team-text {
-    font-weight: normal;
     color: var(--text-color);
 }
 
@@ -232,7 +233,6 @@ body {
 }
 
 .portfolio-examples .example-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
